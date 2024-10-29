@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_visualization">
+    <par_visualization action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <macroponent display_value="Vertical bar">23051643b7e03010097cb81cde11a910</macroponent>
+        <name>Incident with priority and assignment group</name>
+        <properties>{"configVersion":"23.0.0-ci-SNAPSHOT","yAxisHidden":false,"yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"newReporting":false,"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"sourceType":"table","tableOrViewName":"incident","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVpbmNpZGVudDE3MzAxMDU3ODUzODQ5OTM2NDczMS4xNjEwMDY4NA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Incident with priority and assignment group","showBorder":true,"bareBorder":false,"telemetry":"null","showDataPassthrough":false,"metrics":[{"dataSource":"dGFibGVpbmNpZGVudDE3MzAxMDU3ODUzODQ5OTM2NDczMS4xNjEwMDY4NA==","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNekF4TURVM09EVXpPRFE1T1RNMk5EY3pNUzR4TmpFd01EWTROQT09MTczMDEwNTc4NTM4NTg3NTY4MDEyLjQyNzIyMTg=","aggregateFunction":"COUNT","axisId":"primary","numberFormat":{"customFormat":false},"durationFormat":{"customFormat":false},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGVpbmNpZGVudDE3MzAxMDU3ODUzODQ5OTM2NDczMS4xNjEwMDY4NA==","groupByField":"priority","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":12,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":true}],"sortBy":"value","sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"showChangeFrom":"previous","period":"M","dateFormat":"default","chartVariation":"stacked","colorConfig":{"type":"default"},"showAdditionalGroupBySelector":true,"additionalGroupByConfig":[{"label":"priority","id":"priority"},{"label":"assignment_group","id":"assignment_group"}]}</properties>
+        <requested_by/>
+        <scheduled_count/>
+        <sys_class_name>par_visualization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 05:14:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2715223fd69c907d89b4411ca88cbc18</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Incident with priority and assignment group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>par_visualization_2715223fd69c907d89b4411ca88cbc18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 08:56:25</sys_updated_on>
+        <type>Vertical bar</type>
+    </par_visualization>
+</record_update>

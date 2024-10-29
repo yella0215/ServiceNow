@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1552560_training_incident">x_1552560_training_incident</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>DEM</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 17:19:50</sys_created_on>
+        <sys_id>be216bef47d592103d806042d16d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DEM</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sys_number_be216bef47d592103d806042d16d43eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 17:19:50</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Raise an Issue">3ed3263347d112103d806042d16d43de</catalog_item>
+        <catalog_variable>IO:7014a6b347d112103d806042d16d439a</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 07:45:09</sys_created_on>
+        <sys_id>1b27aab747d112103d806042d16d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>caller</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_1b27aab747d112103d806042d16d4392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 07:45:09</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make is caller is Read only">dbf6a6b747d112103d806042d16d4328</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>caller</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b27aab747d112103d806042d16d4392"/>
+</record_update>

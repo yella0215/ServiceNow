@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="New Asset Request">88a7d4dd472912103d806042d16d43a0</sc_cat_item>
+        <sc_category display_value="Peripherals">2c0b59874f7b4200086eeed18110c71f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 13:10:25</sys_created_on>
+        <sys_id>fd08dcd1476912103d806042d16d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Peripherals.New Asset Request</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sc_cat_item_category_fd08dcd1476912103d806042d16d43d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 13:10:25</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Scope">060d016f47d952103d806042d16d4314</application>
+        <file_path/>
+        <instance_id>efc14feb1b0a0ed078c7cb7b234bcb44</instance_id>
+        <instance_name>dev270177</instance_name>
+        <name>sc_cat_item_category_fd08dcd1476912103d806042d16d43d4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="New Asset Request">88a7d4dd472912103d806042d16d43a0</sc_cat_item><sc_category display_value="Peripherals">2c0b59874f7b4200086eeed18110c71f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-28 13:10:25</sys_created_on><sys_id>fd08dcd1476912103d806042d16d43d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Peripherals.New Asset Request</sys_name><sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package><sys_policy/><sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope><sys_update_name>sc_cat_item_category_fd08dcd1476912103d806042d16d43d4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-28 13:10:25</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1647248294</payload_hash>
+        <record_name>Peripherals.New Asset Request</record_name>
+        <reverted_from/>
+        <source>e2b0d96b471d52103d806042d16d4368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 13:10:25</sys_created_on>
+        <sys_id>4e08dcd1476912103d806042d16d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192d33fc7b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 13:10:25</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>7108dcd1776912103fbfb24dec3e6cd8</update_guid>
+        <update_guid_history>7108dcd1776912103fbfb24dec3e6cd8:1647248294</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Peripherals.New Asset Request">66f97cad476512103d806042d16d43c7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-29 10:17:12</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>68992dd27858437eb2153c0e4d806fa4</sys_id>
+        <sys_metadata>fd08dcd1476912103d806042d16d43d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Peripherals.New Asset Request</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_scope_delete display_value="">79e26a0dee484970bc4544f4ec8a7900</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_fd08dcd1476912103d806042d16d43d4</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_fd08dcd1476912103d806042d16d43d4">4e08dcd1476912103d806042d16d43d8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-29 10:17:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="New Asset Request">88a7d4dd472912103d806042d16d43a0</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 13:10:24</sys_created_on>
+        <sys_id>7508dcd1476912103d806042d16d43cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.New Asset Request</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_7508dcd1476912103d806042d16d43cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 13:10:24</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Scope">060d016f47d952103d806042d16d4314</application>
+        <file_path/>
+        <instance_id>efc14feb1b0a0ed078c7cb7b234bcb44</instance_id>
+        <instance_name>dev270177</instance_name>
+        <name>sc_cat_item_catalog_7508dcd1476912103d806042d16d43cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="New Asset Request">88a7d4dd472912103d806042d16d43a0</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-28 13:10:24</sys_created_on><sys_id>7508dcd1476912103d806042d16d43cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.New Asset Request</sys_name><sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package><sys_policy/><sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope><sys_update_name>sc_cat_item_catalog_7508dcd1476912103d806042d16d43cf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-28 13:10:24</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-823183748</payload_hash>
+        <record_name>Service Catalog.New Asset Request</record_name>
+        <reverted_from/>
+        <source>e2b0d96b471d52103d806042d16d4368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 13:10:25</sys_created_on>
+        <sys_id>7508dcd1476912103d806042d16d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192d33fc7550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 13:10:25</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>7908dcd170691210e6e350dc182349d3</update_guid>
+        <update_guid_history>7908dcd170691210e6e350dc182349d3:-823183748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.New Asset Request">1af974ad476512103d806042d16d43d0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-29 10:17:11</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>2fc6c25c95d04ebc9acd1971bf989f04</sys_id>
+        <sys_metadata>7508dcd1476912103d806042d16d43cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.New Asset Request</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_parent display_value="New Asset Request">88a7d4dd472912103d806042d16d43a0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_scope_delete display_value="">79e26a0dee484970bc4544f4ec8a7900</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_7508dcd1476912103d806042d16d43cf</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_7508dcd1476912103d806042d16d43cf">7508dcd1476912103d806042d16d43d4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-29 10:17:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

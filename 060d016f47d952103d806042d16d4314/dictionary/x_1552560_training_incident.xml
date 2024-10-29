@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="07cf852b471d52103d806042d16d4339" extends="task" label="Incident " max_length="40" name="x_1552560_training_incident" type="collection"/>
+    <element db_object_id="07cf852b471d52103d806042d16d4339" extends="task" label="Incident " max_length="40" name="x_1552560_training_incident" type="collection">
+        <element attributes="encode_utf8=false" label="Caller" max_length="32" name="caller" reference="sys_user" type="reference"/>
+        <element label="New dictionary column" max_length="40" name="new_dictionary_column" type="string"/>
+        <element label="Phone Number" max_length="40" name="u_integer_1" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Purpose" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Windows" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Mac" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Linux" max_length="40" name="u_string_4" type="string"/>
+    </element>
 </database>
