@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>u_journal_4</element>
+        <name>x_1552560_training_incident_new</name>
+        <style>background-color:LightGoldenRodYellow;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 17:41:06</sys_created_on>
+        <sys_id>0db56ac2473992103d806042d16d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1552560_training_incident_new</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sys_ui_style_0db56ac2473992103d806042d16d43c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 17:41:06</sys_updated_on>
+        <themed_style>background-color: RGB(var(--now-color_alert--warning-0, 250,250,210))</themed_style>
+        <value/>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=0db56ac2473992103d806042d16d43c2"/>
+</record_update>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="3d7c6c4a47bd52103d806042d16d439f" label="Incident" max_length="40" name="x_1552560_training_incident_new" type="collection">
+        <element choice="1" label="On hold reason" max_length="40" name="on_hold_reason" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Awaiting Change" sequence="2" value="5"/>
+                <element inactive_on_update="false" label="Awaiting Caller" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Awaiting Problem" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Awaiting Vendor" sequence="4" value="4"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="u_change_request" reference="change_request" type="reference"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="3" label="Impact" max_length="40" name="impact" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="3 - Low" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="2 - Medium" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1"/>
+            </choice>
+        </element>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Work notes list" max_length="1024" name="u_glide_list_2" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="5" label="Priority" max_length="40" name="priority" read_only="true" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="4 - Low" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="1 - Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="5 - Planning" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="2 - High" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Dictionary Override demo" max_length="40" name="dictionary_override_demo" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="3" label="Urgency" max_length="40" name="urgency" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2 - Medium" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Service offering" max_length="32" name="service_offering" reference="service_offering" type="reference"/>
+        <element attributes="encode_utf8=false" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Service" max_length="32" name="service" reference="cmdb_ci_service" type="reference"/>
+        <element attributes="encode_utf8=false" label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="State" max_length="40" name="state" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="On Hold" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Resolved" sequence="4" value="6"/>
+                <element inactive_on_update="false" label="Closed" sequence="5" value="7"/>
+                <element inactive_on_update="false" label="New" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Canceled" sequence="6" value="8"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Caller" mandatory="true" max_length="32" name="caller" reference="sys_user" type="reference"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Watch list" max_length="1024" name="u_glide_list_1" reference="checklist_template" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="100" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Resolution code" max_length="40" name="u_resolution_code" type="string">
+            <choice>
+                <element inactive_on_update="false" label="User error" sequence="9" value="user error"/>
+                <element inactive_on_update="false" label="Known error" sequence="1" value="known error"/>
+                <element inactive_on_update="false" label="Duplicate" sequence="0" value="duplicate"/>
+                <element inactive_on_update="false" label="Resolved by problem" sequence="5" value="resolved by problem"/>
+                <element inactive_on_update="false" label="No resolution provided" sequence="2" value="no resolution provided"/>
+                <element inactive_on_update="false" label="Resolved by request" sequence="6" value="resolved by request"/>
+                <element inactive_on_update="false" label="Resolved by caller" sequence="3" value="resolved by caller"/>
+                <element inactive_on_update="false" label="Solution provided" sequence="7" value="solution provided"/>
+                <element inactive_on_update="false" label="Workaround provided" sequence="8" value="workaround provided"/>
+                <element inactive_on_update="false" label="Resolved by change" sequence="4" value="resolved by change"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Resolution notes" max_length="40" name="u_resolution_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" choice_field="category" choice_table="incident" default="inquiry" label="Category" max_length="40" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Hardware" sequence="2" value="hardware"/>
+                <element inactive_on_update="false" label="Inquiry / Help" sequence="0" value="inquiry"/>
+                <element inactive_on_update="false" label="Network" sequence="3" value="network"/>
+                <element inactive_on_update="false" label="Database" sequence="4" value="database"/>
+                <element inactive_on_update="false" label="Software" sequence="1" value="software"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Problem" max_length="32" name="u_problem" reference="problem" type="reference"/>
+        <element attributes="encode_utf8=false" label="Caused by Change" max_length="32" name="u_caused_by_chnage" reference="change_request" type="reference"/>
+        <element attributes="encode_utf8=false" label="Resolved by" max_length="32" name="u_resolved_by" reference="sys_user" type="reference"/>
+        <element label="Knowledge" max_length="40" name="u_knowledge" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Parent Incident" max_length="32" name="u_parent_incident" reference="incident" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved" max_length="40" name="u_glide_date_time_13" type="glide_date_time"/>
+        <element choice="3" choice_field="state" choice_table="x_1552560_training_incident_new" label="Incident state" max_length="40" name="incident_state" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="7"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Canceled" sequence="5" value="8"/>
+                <element inactive_on_update="false" label="On Hold" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Resolved" sequence="3" value="6"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Additional comments" max_length="4000" name="u_journal_3" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element attributes="encode_utf8=false" label="Configuration item" max_length="32" name="configuration_item" reference="cmdb_ci" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="subcategory" choice_table="incident" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Work notes" max_length="4000" name="u_journal_4" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Channel" max_length="40" name="channel" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Phone" sequence="2" value="phone"/>
+                <element inactive_on_update="false" label="Self-service" sequence="3" value="self-service"/>
+                <element inactive_on_update="false" label="Virtual Agent" sequence="4" value="virtual agent"/>
+                <element inactive_on_update="false" label="Chat" sequence="0" value="chat"/>
+                <element inactive_on_update="false" label="Email" sequence="1" value="email"/>
+                <element inactive_on_update="false" label="Walk-in" sequence="5" value="walk-in"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="caller"/>
+        </index>
+        <index name="index4">
+            <element name="configuration_item"/>
+        </index>
+        <index name="index5">
+            <element name="service"/>
+        </index>
+        <index name="index6">
+            <element name="service_offering"/>
+        </index>
+        <index name="index7">
+            <element name="u_caused_by_chnage"/>
+        </index>
+        <index name="index8">
+            <element name="u_change_request"/>
+        </index>
+        <index name="index9">
+            <element name="u_parent_incident"/>
+        </index>
+        <index name="index10">
+            <element name="u_problem"/>
+        </index>
+        <index name="index11">
+            <element name="u_resolved_by"/>
+        </index>
+    </element>
+</database>

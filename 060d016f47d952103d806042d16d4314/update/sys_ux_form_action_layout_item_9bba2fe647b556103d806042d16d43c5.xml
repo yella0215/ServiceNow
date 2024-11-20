@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="Create  Outage">d7ba2fe647b556103d806042d16d43c2</action>
+        <active>true</active>
+        <color>secondary</color>
+        <description/>
+        <icon/>
+        <item_type>action</item_type>
+        <label>Create  Outage</label>
+        <layout_group/>
+        <name>Create  Outage</name>
+        <order>100</order>
+        <overflow>true</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 11:59:07</sys_created_on>
+        <sys_id>9bba2fe647b556103d806042d16d43c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create  Outage</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_9bba2fe647b556103d806042d16d43c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-14 11:59:07</sys_updated_on>
+        <table>x_1552560_training_incident_new</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

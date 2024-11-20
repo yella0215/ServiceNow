@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="99e7f69b472112103d806042d16d43f9" extends="sys_import_set_row" label="New groups" max_length="40" name="x_1552560_training_new_groups" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 17:58:55</sys_created_on>
+        <sys_id>cfb03b1a47b116103d806042d16d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.sn_incident_write</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_ui_action display_value="">39b07b1a47b116103d806042d16d43f0</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_cfb03b1a47b116103d806042d16d435c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 17:58:55</sys_updated_on>
+        <sys_user_role display_value="sn_incident_write" name="sn_incident_write">260c203a870033000e56d61e36cb0bbc</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Scope">060d016f47d952103d806042d16d4314</application>
+        <file_path/>
+        <instance_id>efc14feb1b0a0ed078c7cb7b234bcb44</instance_id>
+        <instance_name>dev270177</instance_name>
+        <name>sys_ui_action_role_cfb03b1a47b116103d806042d16d435c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-13 17:58:55</sys_created_on><sys_id>cfb03b1a47b116103d806042d16d435c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.sn_incident_write</sys_name><sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package><sys_policy/><sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope><sys_ui_action display_value="">39b07b1a47b116103d806042d16d43f0</sys_ui_action><sys_update_name>sys_ui_action_role_cfb03b1a47b116103d806042d16d435c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-13 17:58:55</sys_updated_on><sys_user_role display_value="sn_incident_write" name="sn_incident_write">260c203a870033000e56d61e36cb0bbc</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>1834592929</payload_hash>
+        <record_name>.sn_incident_write</record_name>
+        <reverted_from/>
+        <source>e2b0d96b471d52103d806042d16d4368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 17:58:55</sys_created_on>
+        <sys_id>dc833b5a47b116103d806042d16d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19326ada9cb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 17:58:55</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>d0833b5a11b1161049a177d4f3b71b41</update_guid>
+        <update_guid_history>d0833b5a11b1161049a177d4f3b71b41:1834592929</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 08:43:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>16a08e44b66d4cbeac48ce8f74c1ccc4</sys_id>
+        <sys_metadata>cfb03b1a47b116103d806042d16d435c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.sn_incident_write</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_scope_delete display_value="">79e26a0dee484970bc4544f4ec8a7900</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_cfb03b1a47b116103d806042d16d435c</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_cfb03b1a47b116103d806042d16d435c">dc833b5a47b116103d806042d16d4341</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-14 08:43:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

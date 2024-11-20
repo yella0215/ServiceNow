@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="new training table lookup" language="en" table="x_1552560_training_new_lookup">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>new training table lookup</label>
+            <language>en</language>
+            <name>x_1552560_training_new_lookup</name>
+            <plural>new training table lookups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 17:04:08</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>new training table lookup</sys_name>
+            <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+            <sys_update_name>sys_documentation_x_1552560_training_new_lookup__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 17:04:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

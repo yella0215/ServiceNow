@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="a02d96ca47f592103d806042d16d43b1" extends="dl_matcher" label="new training table lookup" max_length="40" name="x_1552560_training_new_lookup" type="collection">
+        <element label="Priority" max_length="40" name="priority" type="integer"/>
+        <element label="Impact" max_length="40" name="impact" type="integer"/>
+        <element label="Urgency" max_length="40" name="urgency" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_1552560_training_origin_task_custom" label="Origin Task Custom" language="en" table="problem">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_1552560_training_origin_task_custom</element>
+            <help/>
+            <hint/>
+            <label>Origin Task Custom</label>
+            <language>en</language>
+            <name>problem</name>
+            <plural>Origin Task Customs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-14 09:25:56</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Origin Task Custom</sys_name>
+            <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+            <sys_update_name>sys_documentation_problem_x_1552560_training_origin_task_custom_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-14 09:25:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

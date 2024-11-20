@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" audit="true" db_object_id="213b0fdbd1a302104f34ba60d8b7c1bc" defaultsort="-1" extends="task" label="Problem" max_length="40" name="problem" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="Origin Task Custom" max_length="32" name="x_1552560_training_origin_task_custom" reference="x_1552560_training_incident_new" type="reference"/>
+    </element>
+</database>

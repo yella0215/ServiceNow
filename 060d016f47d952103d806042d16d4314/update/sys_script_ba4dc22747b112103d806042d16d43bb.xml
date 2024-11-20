@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1552560_training_incident_new</collection>
+        <condition>current.incident_state == IncidentState.CLOSED || current.incident_state == IncidentState.CANCELED</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>mark_closed</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[setClosureFields();
+
+function setClosureFields() {
+	// incident_state is Closed so
+	// 1. mark the task as inactive
+	// 2. set the closed by to current user if not supplied
+	// 3. set the closed time to now if not supplied
+	current.active = false;
+	if (current.closed_by.nil())
+		current.closed_by = gs.getUserID();
+	if (current.closed_at.nil())
+		current.closed_at = gs.nowDateTime();
+	
+	// Update the fields that indicate the time/duration of the incident from open to close.
+	// Keep track of duration as a glide_duration value (dd hh:mm:ss) and as a pure number of seconds.
+	// Both calendar time and business time are maintained.
+	
+	var dataChange = current.opened_at.changes() || (current.closed_at.changes() && !current.isValidField("resolved_at"));
+	var opened = current.opened_at.getDisplayValue();
+	var closed = current.closed_at.getDisplayValue();
+	
+	if (dataChange || current.business_duration.nil())
+		current.business_duration = gs.calDateDiff(opened, closed, false);
+	
+	if (dataChange || current.business_stc.nil())
+		current.business_stc = gs.calDateDiff(opened, closed, true);
+	
+	if (dataChange || current.calendar_duration.nil())
+		current.calendar_duration = gs.dateDiff(opened, closed, false);
+	
+	if (dataChange || current.calendar_stc.nil())
+		current.calendar_stc = gs.dateDiff(opened, closed, true);
+}
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-17 07:45:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba4dc22747b112103d806042d16d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mark_closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sys_script_ba4dc22747b112103d806042d16d43bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-17 07:45:52</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba4dc22747b112103d806042d16d43bb"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ba4dc22747b112103d806042d16d43bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-17 07:45:51</sys_created_on>
+        <sys_id>e28d86e347b112103d806042d16d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-17 07:45:51</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

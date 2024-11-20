@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name/>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>!JSUtil.nil(current.assignment_group) &amp;&amp; new OCCalendarUtils().canRead() &amp;&amp; new OnCallCommon().hasActiveRotas(current.assignment_group)</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>On-Call Roster and Escalation details</name>
+        <onclick>showDialog()</onclick>
+        <order>90</order>
+        <script><![CDATA[function dismissModalDialog() {
+  setTimeout(function() {
+    var modal = GlideModal.prototype.get("on_call_who_and_escalation");
+	  modal.destroy();
+  }, 0);
+}
+
+function isModalOutOfViewport (el) {
+	if (el && (el.width() + el.offset().left) > this.window.innerWidth)
+		return true;
+	return false;
+}
+
+function showDialog() {
+	var modal = new GlideModal("on_call_who_and_escalation");
+	ScriptLoader.getScripts('/scripts/incident/glide_custom_modal_accessibility.js', function() {
+		var url = "/$on_call_who_and_escalation.do?sysparm_full_webrtc=true&sysparm_group_id=";
+		url = url + g_form.getValue('assignment_group');
+		url = url + '&sysparm_task_table=' + g_form.getTableName();
+		url = url + '&sysparm_task_sys_id=' + g_form.getUniqueValue();
+		url = url + "&sysparm_stack=no";
+		modal.template = glideCustomModalTemplate;
+		modal.setWidth(807);
+		modal.renderIframe(url, function() {
+			var modalContainer = this.parent.jQuery('#on_call_who_and_escalation');
+			modalContainer.find(".modal-dialog").width("800");
+			modalContainer.find(".modal-content").height("625");
+			modalContainer.find("iframe").height("625");
+			
+			var modalDialogEl = modalContainer.find(".modal-dialog");
+			if (isModalOutOfViewport(modalDialogEl)) {
+				modalContainer.css({
+					"overflow-x": "scroll"
+				});
+			}
+			this.parent.jQuery('#on_call_who_and_escalation .modal-body > div').css({"top": "0", "bottom": "0", "left": "0", "right": "0"});
+		});
+		window.NOW.CustomEvent.observe("DismissOCGlideModal", dismissModalDialog);
+	});
+}
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 18:44:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c57dff1a47f116103d806042d16d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>On-Call Roster and Escalation details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_update_name>sys_ui_action_c57dff1a47f116103d806042d16d4332</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 18:44:16</sys_updated_on>
+        <table>x_1552560_training_incident_new</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="DELETE">
+        <id>c57dff1a47f116103d806042d16d4332</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 18:44:15</sys_created_on>
+        <sys_id>d4edff5a47f116103d806042d16d43ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 18:44:15</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Scope">060d016f47d952103d806042d16d4314</application>
+        <file_path/>
+        <instance_id>efc14feb1b0a0ed078c7cb7b234bcb44</instance_id>
+        <instance_name>dev270177</instance_name>
+        <name>sys_ui_action_c57dff1a47f116103d806042d16d4332</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;false&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;!JSUtil.nil(current.assignment_group) &amp;amp;&amp;amp; new OCCalendarUtils().canRead() &amp;amp;&amp;amp; new OnCallCommon().hasActiveRotas(current.assignment_group)&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;On-Call Roster and Escalation details&lt;/name&gt;&lt;onclick&gt;showDialog()&lt;/onclick&gt;&lt;order&gt;90&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function dismissModalDialog() {
+  setTimeout(function() {
+    var modal = GlideModal.prototype.get("on_call_who_and_escalation");
+	  modal.destroy();
+  }, 0);
+}
+
+function isModalOutOfViewport (el) {
+	if (el &amp;&amp; (el.width() + el.offset().left) &gt; this.window.innerWidth)
+		return true;
+	return false;
+}
+
+function showDialog() {
+	var modal = new GlideModal("on_call_who_and_escalation");
+	ScriptLoader.getScripts('/scripts/incident/glide_custom_modal_accessibility.js', function() {
+		var url = "/$on_call_who_and_escalation.do?sysparm_full_webrtc=true&amp;sysparm_group_id=";
+		url = url + g_form.getValue('assignment_group');
+		url = url + '&amp;sysparm_task_table=' + g_form.getTableName();
+		url = url + '&amp;sysparm_task_sys_id=' + g_form.getUniqueValue();
+		url = url + "&amp;sysparm_stack=no";
+		modal.template = glideCustomModalTemplate;
+		modal.setWidth(807);
+		modal.renderIframe(url, function() {
+			var modalContainer = this.parent.jQuery('#on_call_who_and_escalation');
+			modalContainer.find(".modal-dialog").width("800");
+			modalContainer.find(".modal-content").height("625");
+			modalContainer.find("iframe").height("625");
+			
+			var modalDialogEl = modalContainer.find(".modal-dialog");
+			if (isModalOutOfViewport(modalDialogEl)) {
+				modalContainer.css({
+					"overflow-x": "scroll"
+				});
+			}
+			this.parent.jQuery('#on_call_who_and_escalation .modal-body &gt; div').css({"top": "0", "bottom": "0", "left": "0", "right": "0"});
+		});
+		window.NOW.CustomEvent.observe("DismissOCGlideModal", dismissModalDialog);
+	});
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-13 18:44:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c57dff1a47f116103d806042d16d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;On-Call Roster and Escalation details&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Training Scope" source="x_1552560_training"&gt;060d016f47d952103d806042d16d4314&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Scope"&gt;060d016f47d952103d806042d16d4314&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_c57dff1a47f116103d806042d16d4332&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-13 18:44:16&lt;/sys_updated_on&gt;&lt;table&gt;x_1552560_training_incident_new&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;true&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;c57dff1a47f116103d806042d16d4332&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-13 18:44:15&lt;/sys_created_on&gt;&lt;sys_id&gt;d4edff5a47f116103d806042d16d43ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-13 18:44:15&lt;/sys_updated_on&gt;&lt;table&gt;sys_ui_action&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1900182113</payload_hash>
+        <record_name>On-Call Roster and Escalation details</record_name>
+        <reverted_from/>
+        <source>e2b0d96b471d52103d806042d16d4368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 18:44:16</sys_created_on>
+        <sys_id>aced7f1a47f116103d806042d16d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19326d72d220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 18:44:16</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>a0ed7f1a89f11610eebaa1acb3d15fb0</update_guid>
+        <update_guid_history>a0ed7f1a89f11610eebaa1acb3d15fb0:1900182113</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 08:43:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>073c0f6f79d64d40805cab5384130590</sys_id>
+        <sys_metadata>c57dff1a47f116103d806042d16d4332</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>On-Call Roster and Escalation details</sys_name>
+        <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+        <sys_parent display_value="Incident">3d7c6c4a47bd52103d806042d16d439f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+        <sys_scope_delete display_value="">79e26a0dee484970bc4544f4ec8a7900</sys_scope_delete>
+        <sys_update_name>sys_ui_action_c57dff1a47f116103d806042d16d4332</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_c57dff1a47f116103d806042d16d4332">aced7f1a47f116103d806042d16d43b0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-14 08:43:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

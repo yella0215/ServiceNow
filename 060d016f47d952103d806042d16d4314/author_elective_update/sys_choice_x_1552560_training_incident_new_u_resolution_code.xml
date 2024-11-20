@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_resolution_code" table="x_1552560_training_incident_new" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_resolution_code</element>
+            <name>x_1552560_training_incident_new</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_resolution_code</sys_name>
+            <sys_package display_value="Training Scope" source="x_1552560_training">060d016f47d952103d806042d16d4314</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Scope">060d016f47d952103d806042d16d4314</sys_scope>
+            <sys_update_name>sys_choice_x_1552560_training_incident_new_u_resolution_code</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Duplicate</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>duplicate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Known error</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>known error</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No resolution provided</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>no resolution provided</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved by caller</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>resolved by caller</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved by change</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>resolved by change</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved by problem</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>resolved by problem</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved by request</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>resolved by request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solution provided</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>solution provided</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Workaround provided</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>workaround provided</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>User error</label>
+            <language>en</language>
+            <name>x_1552560_training_incident_new</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-12 09:59:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-12 09:59:09</sys_updated_on>
+            <value>user error</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
